@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"></script>
+</head>
+<body>
+  <app-navbar></app-navbar>
+
+  <div class="container title text-center">
+    <span>Four Seasons Hotels and Resorts</span>
+  </div>
+
+  <div class="container search">
+    <i class="fa fa-search"></i>
+    <span class="optly-search-bar-container RentalsHero-Search-labelText">
+      <div class="xdsoft_autocomplete" style="display: inline-block; width: 700px;">
+        <div class="optly-dropdown-caret"></div>
+        <input type="search" name="optly-fah-search-input" placeholder="Find a hotel or resort" class="xdsoft_input" style="border: 0px; font-size: 18px; background: transparent !important;" autocomplete="off">
+        </div>
+    </span>
+    <span class="optly-search-cta">
+      <span class="RentalsHero-Search-searchText ty-c1">SEARCH</span>
+      <i class="fa fa-arrow-right"></i>
+    </span>
+  </div>
+
+  <div class="RegionList">
+      <div class="ComponentContainer-link CTA CenteredCTA">
+        <a href="#GlobalEmbeddedMap" class="CTA CTA--underlined--light RegionList-link">Browse by map</a>
+      </div>
+
+      <div class="container">
+        <div class="ComponentAccordion SpacedComponent container">
+          <div class="row">
+            <div class="col-sm-12">
+              <dl class="Accordion" role="presentation">
+                <div class="Accordion-item Accordion-item--collapsed">
+                    <mat-accordion>
+                        <mat-expansion-panel class="item">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              <span class="Accordion-item-title ty-h4">North America</span>
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>
+
+                          <mat-form-field>
+                              <dd id="north-america" class="Accordion-item-region" role="region" aria-labelledby="north-america" >
+                                  <div class="LinksList-links container SpacedComponent">
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/anguilla/">Anguilla</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/atlanta/">Atlanta</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/austin/">Austin</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/oceanclub/">Bahamas (The Ocean Club)</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/baltimore/">Baltimore</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/boston/">Boston</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/chicago/">Chicago</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/dallas/">Dallas</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/denver/">Denver</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/hualalai/">Hawaii, Hualalai</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/lanai/">Hawaii, Lanai</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/maui/">Hawaii, Maui</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/oahu/">Hawaii, Oahu at Ko Olina</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/houston/">Houston</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/jacksonhole/">Jackson Hole</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/lasvegas/">Las Vegas</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/losangeles/">Los Angeles (Four Seasons Los Angeles)</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/beverlywilshire/">Los Angeles (Beverly Wilshire)</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/westlakevillage/">Los Angeles Area (Westlake Village)</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/loscabos/">Los Cabos at Costa Palmas™</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/mexico/">Mexico City</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/miami/">Miami</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/surfside/">Miami Beaches, Surfside</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/montreal/">Montreal</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/napavalley/">Napa Valley</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/nevis/">Nevis</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/newyork/">New York</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/newyorkdowntown/">New York Downtown</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/orlando/">Orlando</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/palmbeach/">Palm Beach</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/puntamita/">Punta Mita, México</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/northsandiego/">San Diego, Aviara (Residence rental)</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/sanfrancisco/">San Francisco</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/santabarbara/">Santa Barbara</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/santafe/">Santa Fe</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/scottsdale/">Scottsdale</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/seattle/">Seattle</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/siliconvalley/">Palo Alto, Silicon Valley</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/stlouis/">St. Louis</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/toronto/">Toronto</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/vail/">Vail</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/vancouver/">Vancouver</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/washington/">Washington, DC</a>
+                                    </div>
+                                    <div class="LinksList-linkContainer">
+                                      <a class="CTA CTA--underlined--light LinksList-link" href="/whistler/">Whistler</a>
+                                    </div>
+                                  </div>
+                                  </dd>
+                          </mat-form-field>
+
+                        </mat-expansion-panel>
+
+                        <mat-expansion-panel class="item">
+                            <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                <span class="Accordion-item-title ty-h4">Asia & Pacific</span>
+                              </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <mat-form-field>
+                                <dd id="north-america" class="Accordion-item-region" role="region" aria-labelledby="north-america" >
+                                    <div class="LinksList-links container SpacedComponent">
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/anguilla/">Anguilla</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/atlanta/">Atlanta</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/austin/">Austin</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/oceanclub/">Bahamas (The Ocean Club)</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/baltimore/">Baltimore</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/boston/">Boston</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/chicago/">Chicago</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/dallas/">Dallas</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/denver/">Denver</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/hualalai/">Hawaii, Hualalai</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/lanai/">Hawaii, Lanai</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/maui/">Hawaii, Maui</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/oahu/">Hawaii, Oahu at Ko Olina</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/houston/">Houston</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/jacksonhole/">Jackson Hole</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/lasvegas/">Las Vegas</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/losangeles/">Los Angeles (Four Seasons Los Angeles)</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/beverlywilshire/">Los Angeles (Beverly Wilshire)</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/westlakevillage/">Los Angeles Area (Westlake Village)</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/loscabos/">Los Cabos at Costa Palmas™</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/mexico/">Mexico City</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/miami/">Miami</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/surfside/">Miami Beaches, Surfside</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/montreal/">Montreal</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/napavalley/">Napa Valley</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/nevis/">Nevis</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/newyork/">New York</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/newyorkdowntown/">New York Downtown</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/orlando/">Orlando</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/palmbeach/">Palm Beach</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/puntamita/">Punta Mita, México</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/northsandiego/">San Diego, Aviara (Residence rental)</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/sanfrancisco/">San Francisco</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/santabarbara/">Santa Barbara</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/santafe/">Santa Fe</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/scottsdale/">Scottsdale</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/seattle/">Seattle</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/siliconvalley/">Palo Alto, Silicon Valley</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/stlouis/">St. Louis</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/toronto/">Toronto</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/vail/">Vail</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/vancouver/">Vancouver</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/washington/">Washington, DC</a>
+                                      </div>
+                                      <div class="LinksList-linkContainer">
+                                        <a class="CTA CTA--underlined--light LinksList-link" href="/whistler/">Whistler</a>
+                                      </div>
+                                    </div>
+                                    </dd>
+                            </mat-form-field>
+
+                          </mat-expansion-panel>
+
+                          <mat-expansion-panel class="item">
+                              <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                  <span class="Accordion-item-title ty-h4">Middle East & Africa</span>
+                                </mat-panel-title>
+                              </mat-expansion-panel-header>
+
+                              <mat-form-field>
+                                  <dd id="north-america" class="Accordion-item-region" role="region" aria-labelledby="north-america" >
+                                      <div class="LinksList-links container SpacedComponent">
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/anguilla/">Anguilla</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/atlanta/">Atlanta</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/austin/">Austin</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/oceanclub/">Bahamas (The Ocean Club)</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/baltimore/">Baltimore</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/boston/">Boston</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/chicago/">Chicago</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/dallas/">Dallas</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/denver/">Denver</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/hualalai/">Hawaii, Hualalai</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/lanai/">Hawaii, Lanai</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/maui/">Hawaii, Maui</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/oahu/">Hawaii, Oahu at Ko Olina</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/houston/">Houston</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/jacksonhole/">Jackson Hole</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/lasvegas/">Las Vegas</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/losangeles/">Los Angeles (Four Seasons Los Angeles)</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/beverlywilshire/">Los Angeles (Beverly Wilshire)</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/westlakevillage/">Los Angeles Area (Westlake Village)</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/loscabos/">Los Cabos at Costa Palmas™</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/mexico/">Mexico City</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/miami/">Miami</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/surfside/">Miami Beaches, Surfside</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/montreal/">Montreal</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/napavalley/">Napa Valley</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/nevis/">Nevis</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/newyork/">New York</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/newyorkdowntown/">New York Downtown</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/orlando/">Orlando</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/palmbeach/">Palm Beach</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/puntamita/">Punta Mita, México</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/northsandiego/">San Diego, Aviara (Residence rental)</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/sanfrancisco/">San Francisco</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/santabarbara/">Santa Barbara</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/santafe/">Santa Fe</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/scottsdale/">Scottsdale</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/seattle/">Seattle</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/siliconvalley/">Palo Alto, Silicon Valley</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/stlouis/">St. Louis</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/toronto/">Toronto</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/vail/">Vail</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/vancouver/">Vancouver</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/washington/">Washington, DC</a>
+                                        </div>
+                                        <div class="LinksList-linkContainer">
+                                          <a class="CTA CTA--underlined--light LinksList-link" href="/whistler/">Whistler</a>
+                                        </div>
+                                      </div>
+                                      </dd>
+                              </mat-form-field>
+
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel class="item">
+                                <mat-expansion-panel-header>
+                                  <mat-panel-title>
+                                    <span class="Accordion-item-title ty-h4">Europe</span>
+                                  </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <mat-form-field>
+                                    <dd id="north-america" class="Accordion-item-region" role="region" aria-labelledby="north-america" >
+                                        <div class="LinksList-links container SpacedComponent">
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/anguilla/">Anguilla</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/atlanta/">Atlanta</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/austin/">Austin</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/oceanclub/">Bahamas (The Ocean Club)</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/baltimore/">Baltimore</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/boston/">Boston</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/chicago/">Chicago</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/dallas/">Dallas</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/denver/">Denver</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/hualalai/">Hawaii, Hualalai</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/lanai/">Hawaii, Lanai</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/maui/">Hawaii, Maui</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/oahu/">Hawaii, Oahu at Ko Olina</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/houston/">Houston</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/jacksonhole/">Jackson Hole</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/lasvegas/">Las Vegas</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/losangeles/">Los Angeles (Four Seasons Los Angeles)</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/beverlywilshire/">Los Angeles (Beverly Wilshire)</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/westlakevillage/">Los Angeles Area (Westlake Village)</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/loscabos/">Los Cabos at Costa Palmas™</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/mexico/">Mexico City</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/miami/">Miami</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/surfside/">Miami Beaches, Surfside</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/montreal/">Montreal</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/napavalley/">Napa Valley</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/nevis/">Nevis</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/newyork/">New York</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/newyorkdowntown/">New York Downtown</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/orlando/">Orlando</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/palmbeach/">Palm Beach</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/puntamita/">Punta Mita, México</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/northsandiego/">San Diego, Aviara (Residence rental)</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/sanfrancisco/">San Francisco</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/santabarbara/">Santa Barbara</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/santafe/">Santa Fe</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/scottsdale/">Scottsdale</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/seattle/">Seattle</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/siliconvalley/">Palo Alto, Silicon Valley</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/stlouis/">St. Louis</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/toronto/">Toronto</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/vail/">Vail</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/vancouver/">Vancouver</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/washington/">Washington, DC</a>
+                                          </div>
+                                          <div class="LinksList-linkContainer">
+                                            <a class="CTA CTA--underlined--light LinksList-link" href="/whistler/">Whistler</a>
+                                          </div>
+                                        </div>
+                                        </dd>
+                                </mat-form-field>
+
+                              </mat-expansion-panel>
+
+                              <mat-expansion-panel class="item">
+                                  <mat-expansion-panel-header>
+                                    <mat-panel-title>
+                                      <span class="Accordion-item-title ty-h4">Central & South America</span>
+                                    </mat-panel-title>
+                                  </mat-expansion-panel-header>
+
+                                  <mat-form-field>
+                                      <dd id="north-america" class="Accordion-item-region" role="region" aria-labelledby="north-america" >
+                                          <div class="LinksList-links container SpacedComponent">
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/anguilla/">Anguilla</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/atlanta/">Atlanta</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/austin/">Austin</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/oceanclub/">Bahamas (The Ocean Club)</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/baltimore/">Baltimore</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/boston/">Boston</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/chicago/">Chicago</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/dallas/">Dallas</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/denver/">Denver</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/hualalai/">Hawaii, Hualalai</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/lanai/">Hawaii, Lanai</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/maui/">Hawaii, Maui</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/oahu/">Hawaii, Oahu at Ko Olina</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/houston/">Houston</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/jacksonhole/">Jackson Hole</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/lasvegas/">Las Vegas</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/losangeles/">Los Angeles (Four Seasons Los Angeles)</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/beverlywilshire/">Los Angeles (Beverly Wilshire)</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/westlakevillage/">Los Angeles Area (Westlake Village)</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/loscabos/">Los Cabos at Costa Palmas™</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/mexico/">Mexico City</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/miami/">Miami</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/surfside/">Miami Beaches, Surfside</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/montreal/">Montreal</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/napavalley/">Napa Valley</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/nevis/">Nevis</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/newyork/">New York</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/newyorkdowntown/">New York Downtown</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/orlando/">Orlando</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/palmbeach/">Palm Beach</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/puntamita/">Punta Mita, México</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/northsandiego/">San Diego, Aviara (Residence rental)</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/sanfrancisco/">San Francisco</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/santabarbara/">Santa Barbara</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/santafe/">Santa Fe</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/scottsdale/">Scottsdale</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/seattle/">Seattle</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/siliconvalley/">Palo Alto, Silicon Valley</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/stlouis/">St. Louis</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/toronto/">Toronto</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/vail/">Vail</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/vancouver/">Vancouver</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/washington/">Washington, DC</a>
+                                            </div>
+                                            <div class="LinksList-linkContainer">
+                                              <a class="CTA CTA--underlined--light LinksList-link" href="/whistler/">Whistler</a>
+                                            </div>
+                                          </div>
+                                          </dd>
+                                  </mat-form-field>
+
+                                </mat-expansion-panel>
+
+                      </mat-accordion>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="chart">
+    <div class="container">
+        <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="maplocation($event)">
+            <agm-marker [latitude]="lat" [longitude]="lng">
+              <agm-info-window [disableAutoPan]="true">
+                Hi, this is the location of <strong>Coffee-Time</strong>
+              </agm-info-window>
+            </agm-marker>
+          </agm-map>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+</body>
+</html>

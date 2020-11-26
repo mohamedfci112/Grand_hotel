@@ -1,0 +1,55 @@
+.body{
+  overflow-x: hidden;
+}
+
+.navbar-nav{
+  list-style: none;
+  margin:0;
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 1000px;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+.navbar-nav li{
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  padding: 5px;
+}
+
+.navbar-nav li a{
+  color: rgb(0, 0, 0)!important;
+  font-weight: bold;
+  font-size: .75em;
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .20em;
+  line-height: 1.33333em;
+  text-transform: uppercase;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  border-bottom-color: black;
+  transition: 0.3s ease-in-out;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.322);
+  background-image: linear-gradient(red,blue);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 800;
+  box-sizing: border-box;
+}
+
+.navbar-toggler{
+  background-color: #000!important;
+}
+

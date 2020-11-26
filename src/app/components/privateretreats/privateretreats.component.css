@@ -1,0 +1,277 @@
+*{
+  overflow: hidden;
+}
+.header{
+  width: 100%;
+  height: 500px;
+}
+.background-wrap{
+  z-index: -1000;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.video{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header .content{
+  position: absolute;
+  top: 63px;
+  left: 0;
+  width: 100%;
+  height: 437px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.header h1{
+  text-align: center;
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 10px auto 23px;
+  padding-top: 15%;
+  color: #fff;
+}
+.header h1:after{
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 8px;
+  width: 40px;
+}
+.header span{
+  text-align: center;
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .75rem;
+  letter-spacing: .25em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: auto;
+
+}
+
+.check{
+  margin: 0 auto 4px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  }
+  .check1{
+    align-items: center;
+    background-color: #fff;
+    max-width: 990px;
+    margin: auto;
+    padding: 45px 0 30px;
+    box-shadow: 0 2px 4px 0 hsla(0,0%,47%,.25);
+    display: flex;
+    text-decoration: none;
+    border: 1px groove;
+    border-radius: 5px;
+  }
+
+  .fa-search{
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .RentalsHero-Search-labelText{
+    font-size: 1.125rem;
+    letter-spacing: .02286em;
+    line-height: 1.17857em;
+    box-flex: 1;
+    flex-grow: 1;
+    font-family: Neue Helvetica,Helvetica,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+  .xdsoft_autocomplete{
+    display: inline-block;
+    position: relative;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    width: 700px!important;
+  }
+  .xdsoft_autocomplete .xdsoft_input{
+    position: relative;
+    z-index: 2;
+    width: 700px!important;
+    padding: 10px 20px;
+    font-weight: 100;
+    outline-offset: -2px;
+  }
+  .optly-search-cta{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .RentalsHero-Search-searchText{
+    display: block;
+    font-family: Neue Helvetica,Helvetica,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .75rem;
+    letter-spacing: .25em;
+    line-height: 1.33333em;
+    margin-right: 20px;
+  }
+
+  .SpacedComponent{
+    box-sizing: border-box;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .Text-Box-text{
+    text-align: center;
+    font-family: Monotype Garamond,Garamond,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.375rem;
+    letter-spacing: .02273em;
+    line-height: 1.5em;
+  }
+
+
+  .CardCarousel-heading{
+    text-align: center;
+  }
+  .ty-h2{
+    margin: 0;
+    font-family: Neue Helvetica,Helvetica,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: .16667em;
+    line-height: 1.29167em;
+    text-transform: uppercase;
+  }
+
+  .CardCarousel-parent{
+    overflow: hidden;
+  }
+  .CardCarousel-row{
+    position: relative;
+    box-sizing: border-box;
+  }
+  .flickity-viewport{
+    height: 440px;
+    box-sizing: border-box;
+  }
+  .flickity-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .CardCarousel-item{
+    width: 290px;
+    display: flex;
+    background-color: #f5f5f5;
+    margin: 0 15px;
+  }
+  .CardCarousel-card{
+    text-align: center;
+    display: flex;
+    width: 100%;
+  }
+  .CardCarousel-card .Card-container{
+    background-color: #f5f5f5;
+    width: 100%;
+  }
+  .Image-ratioContainer{
+    position: relative;
+    width: 100%;
+    height: 163px;
+
+  }
+  .Image-picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .Image-ratioContainer .Image-img{
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  .CardCarousel-card .Card-body{
+    padding: 18px 15px 60px;
+  }
+  .CardCarousel-card .Card-heading{
+    color: black;
+  }
+  .CardCarousel-card .Card-cta{
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Neue Helvetica,Helvetica,sans-serif;
+    font-style: normal;
+    font-size: .75rem;
+    letter-spacing: .25em;
+    line-height: 1.33333em;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    font-weight: 700;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    border-bottom-color: #000;
+    color: #000;
+    transition: background-color .3s ease-out,color .3s ease-out,border-color .3s ease-out;
+  }
+  .CardCarousel-card .Card-heading .Heading-title{
+    position: relative;
+    font-family: Neue Helvetica,Helvetica,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .75rem;
+    letter-spacing: .25em;
+    line-height: 1.33333em;
+    text-transform: uppercase;
+  }
+  .CardCarousel-card .Card-heading .Heading-title:after{
+    background-color: currentColor;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 15px auto 10px;
+    width: 40px;
+  }
+
+  .InlineCarousel-title{
+    padding-bottom: 40px;
+  }
+.InlineCarousel-title .ty-h2{
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: .16667em;
+  line-height: 1.29167em;
+  text-transform: uppercase;
+}
+/******************************************/
+.slideshow{
+  padding-top: 30px;
+}
+

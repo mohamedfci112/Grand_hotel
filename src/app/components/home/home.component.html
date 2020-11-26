@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"></script>
+</head>
+<body>
+  <app-navbar></app-navbar>
+
+  <section>
+    <div class="background-wrap">
+      <video  class="video" preload="auto" autoplay="true" loop="loop" muted="muted" >
+        <source src="https://www.fourseasons.com/content/dam/fourseasons/images/web/FSH/FSH_GlobalHomepage_Ambient.mp4" type="video/mp4">
+          Video not supported
+      </video>
+    </div>
+    <br><br>
+    <div class="container check">
+      <div class="row check1">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">DESTINATION</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-sm-12 col-xs-12">
+          <div>
+              <label for="exampleFormControlSelect1">CHECK IN - CHECK OUT</label>
+              <my-date-range-picker [options]="myDateRangePickerOptions"
+              (dateRangeChanged)="onDateRangeChanged($event)"></my-date-range-picker>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">ADULTS</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">CHILDREN</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div>
+            <button class="btn btn-secondary">CHECK RATES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main">
+    <div class="row main1">
+      <div class="discoverText">
+        <h2>Discover Four Seasons Hotels and Resorts</h2>
+      </div>
+      <div class="discoverImg">
+          <img class="img-responsive" src="https://www.fourseasons.com/alt/img-opt/~80.930.0,0000-312,5000-3000,0000-1687,5000/author/content/dam/fourseasons/images/web/CHI/CHI_1066_original.jpg" alt="...">
+      </div>
+    </div>
+    <!-- in app.component.html -->
+    <div class="chart">
+      <fusioncharts
+      width="100%"
+      height="400"
+      type="mscombi2d"
+      [dataSource]=dataSource>
+      </fusioncharts>
+    </div>
+
+    <div class="main2">
+      <h2>The World of Four Seasons</h2>
+      <ul class="imageAndText">
+        <li class="imageAndTextItem container">
+          <div class="ImageAndTextPanel-itemContent row">
+              <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 ImageAndTextPanel-columns">
+                <figure class="Collage-figure">
+                  <style>
+                  @media only screen and (min-width: 0px) {
+                  .Image-ratioContainer.Image-oh11keLlsxm::after {
+                    padding-bottom: calc(100% / 0.75);
+                  }
+                }
+                @media only screen and (min-width: 701px) {
+                  .Image-ratioContainer.Image-oh11keLlsxm::after {
+                    padding-bottom: calc(100% / 0.75);
+                  }
+                }
+                @media only screen and (min-width: 961px) {
+                  .Image-ratioContainer.Image-oh11keLlsxm::after {
+                    padding-bottom: calc(100% / 0.75);
+                  }
+                }
+                @media only screen and (min-width: 1701px) {
+                  .Image-ratioContainer.Image-oh11keLlsxm::after {
+                    padding-bottom: calc(100% / 0.75);
+                  }
+                }
+                @media only screen and (min-width: px) {
+                  .Image-ratioContainer.Image-oh11keLlsxm::after {
+                    padding-bottom: calc(100% / 0.75);
+                  }
+                }</style>
+                <div class="Image Image-ratioContainer Image-oh11keLlsxm Collage-image">
+                  <picture class="Image-picture Image--lazyload">
+                    <source media="(max-width: 700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg,https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                    <source media="(max-width: 960px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                    <source media="(max-width: 1700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                    <source data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                    <img class="Image-img lazyloaded" alt="Modern lights, chandeliers over dining table, modern kitchen counter with cheese board, wine" data-src="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg" aria-hidden="false" src="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg">
+                  </picture>
+                </div>
+                <figcaption class="Collage-figcaption"></figcaption>
+              </figure>
+                </div>
+                <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-4 offset-lg-1 col-xl-4 offset-xl-start ImageAndTextPanel-columns">
+                  <div class="ImageAndTextPanel-textPanel">
+                    <div class="Heading ImageAndTextPanel-Heading">
+                      <span class="Heading-eyebrow ty-h4">Residences</span>
+                      <h3 class="Heading-title ty-h3">At Home With Four Seasons</h3>
+                      <p class="normal Heading-text ty-b2">Whether living with us or staying for a unique vacation experience, retreat to an inspiring home, brought to life by legendary Four Seasons service.</p>
+                    </div>
+                    <div class="ImageAndTextPanel-CTA">
+                      <a class="CTA CTA--primary--light" href="/residences/private_residences/">Explore Locations</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </li>
+        <li class="imageAndTextItem container">
+            <div class="ImageAndTextPanel-itemContent row">
+                <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-4 offset-lg-1 col-xl-4 offset-xl-start ImageAndTextPanel-columns">
+                    <div class="ImageAndTextPanel-textPanel">
+                      <div class="Heading ImageAndTextPanel-Heading">
+                        <span class="Heading-eyebrow ty-h4">Residences</span>
+                        <h3 class="Heading-title ty-h3">At Home With Four Seasons</h3>
+                        <p class="normal Heading-text ty-b2">Whether living with us or staying for a unique vacation experience, retreat to an inspiring home, brought to life by legendary Four Seasons service.</p>
+                      </div>
+                      <div class="ImageAndTextPanel-CTA">
+                        <a class="CTA CTA--primary--light" href="/residences/private_residences/">Explore Locations</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 ImageAndTextPanel-columns">
+                  <figure class="Collage-figure">
+                    <style>
+                    @media only screen and (min-width: 0px) {
+                    .Image-ratioContainer.Image-oh11keLlsxm::after {
+                      padding-bottom: calc(100% / 0.75);
+                    }
+                  }
+                  @media only screen and (min-width: 701px) {
+                    .Image-ratioContainer.Image-oh11keLlsxm::after {
+                      padding-bottom: calc(100% / 0.75);
+                    }
+                  }
+                  @media only screen and (min-width: 961px) {
+                    .Image-ratioContainer.Image-oh11keLlsxm::after {
+                      padding-bottom: calc(100% / 0.75);
+                    }
+                  }
+                  @media only screen and (min-width: 1701px) {
+                    .Image-ratioContainer.Image-oh11keLlsxm::after {
+                      padding-bottom: calc(100% / 0.75);
+                    }
+                  }
+                  @media only screen and (min-width: px) {
+                    .Image-ratioContainer.Image-oh11keLlsxm::after {
+                      padding-bottom: calc(100% / 0.75);
+                    }
+                  }</style>
+                  <div class="Image Image-ratioContainer Image-oh11keLlsxm Collage-image">
+                    <picture class="Image-picture Image--lazyload">
+                      <source media="(max-width: 700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg,https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                      <source media="(max-width: 960px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                      <source media="(max-width: 1700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                      <source data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                      <img class="Image-img lazyloaded" alt="Modern lights, chandeliers over dining table, modern kitchen counter with cheese board, wine" data-src="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg" aria-hidden="false" src="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg">
+                    </picture>
+                  </div>
+                  <figcaption class="Collage-figcaption"></figcaption>
+                </figure>
+                  </div>
+
+            </div>
+          </li>
+        <li class="imageAndTextItem container">
+              <div class="ImageAndTextPanel-itemContent row">
+                  <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 ImageAndTextPanel-columns">
+                    <figure class="Collage-figure">
+                      <style>
+                      @media only screen and (min-width: 0px) {
+                      .Image-ratioContainer.Image-oh11keLlsxm::after {
+                        padding-bottom: calc(100% / 0.75);
+                      }
+                    }
+                    @media only screen and (min-width: 701px) {
+                      .Image-ratioContainer.Image-oh11keLlsxm::after {
+                        padding-bottom: calc(100% / 0.75);
+                      }
+                    }
+                    @media only screen and (min-width: 961px) {
+                      .Image-ratioContainer.Image-oh11keLlsxm::after {
+                        padding-bottom: calc(100% / 0.75);
+                      }
+                    }
+                    @media only screen and (min-width: 1701px) {
+                      .Image-ratioContainer.Image-oh11keLlsxm::after {
+                        padding-bottom: calc(100% / 0.75);
+                      }
+                    }
+                    @media only screen and (min-width: px) {
+                      .Image-ratioContainer.Image-oh11keLlsxm::after {
+                        padding-bottom: calc(100% / 0.75);
+                      }
+                    }</style>
+                    <div class="Image Image-ratioContainer Image-oh11keLlsxm Collage-image">
+                      <picture class="Image-picture Image--lazyload">
+                        <source media="(max-width: 700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg,https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                        <source media="(max-width: 960px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                        <source media="(max-width: 1700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                        <source data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg 2x">
+                        <img class="Image-img lazyloaded" alt="Modern lights, chandeliers over dining table, modern kitchen counter with cheese board, wine" data-src="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg" aria-hidden="false" src="https://www.fourseasons.com/alt/img-opt/~80.370.703,8725-0,0000-1607,2500-2143,0000/publish/content/dam/fourseasons/images/web/NVC/NVC_018_original.jpg">
+                      </picture>
+                    </div>
+                    <figcaption class="Collage-figcaption"></figcaption>
+                  </figure>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-4 offset-lg-1 col-xl-4 offset-xl-start ImageAndTextPanel-columns">
+                      <div class="ImageAndTextPanel-textPanel">
+                        <div class="Heading ImageAndTextPanel-Heading">
+                          <span class="Heading-eyebrow ty-h4">Residences</span>
+                          <h3 class="Heading-title ty-h3">At Home With Four Seasons</h3>
+                          <p class="normal Heading-text ty-b2">Whether living with us or staying for a unique vacation experience, retreat to an inspiring home, brought to life by legendary Four Seasons service.</p>
+                        </div>
+                        <div class="ImageAndTextPanel-CTA">
+                          <a class="CTA CTA--primary--light" href="/residences/private_residences/">Explore Locations</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+    </div>
+
+    <div class="main3 container">
+        <div class="Heading InlineCarousel-title">
+          <h2 class="Heading-title ty-h2">New To Four Seasons</h2>
+        </div>
+
+         <div class=" text-center carousel">
+          <ngb-carousel class="ngb-carousel" *ngIf="images">
+            <ng-template ngbSlide>
+              <img [src]="images[0]" alt="Random first slide">
+              <div class="carousel-caption">
+                <h3 id="CtaBlock-title--UcKUljgR6">Four Seasons Hotel Montreal – Opening Mid 2019</h3>
+                <p class="CtaBlock-text">
+                  In North America’s most European city, Four Seasons Hotel Montreal forms the vibrant new epicentre of the Golden Square Mile. Enjoy stellar dining by a visionary celebrity chef, and easy access to luxury shopping, museums and galleries.
+                </p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img [src]="images[1]" alt="Random second slide">
+              <div class="carousel-caption">
+                <h3 id="CtaBlock-title--UcKUljgR6">Four Seasons Hotel Montreal – Opening Mid 2019</h3>
+                <p class="CtaBlock-text">
+                  In North America’s most European city, Four Seasons Hotel Montreal forms the vibrant new epicentre of the Golden Square Mile. Enjoy stellar dining by a visionary celebrity chef, and easy access to luxury shopping, museums and galleries.
+                </p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img [src]="images[2]" alt="Random third slide">
+              <div class="carousel-caption">
+                <h3 id="CtaBlock-title--UcKUljgR6">Four Seasons Hotel Montreal – Opening Mid 2019</h3>
+                <p class="CtaBlock-text">
+                  In North America’s most European city, Four Seasons Hotel Montreal forms the vibrant new epicentre of the Golden Square Mile. Enjoy stellar dining by a visionary celebrity chef, and easy access to luxury shopping, museums and galleries.
+                </p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+
+         </div>
+        </div>
+
+    <div class="main4">
+      <div class="BodySection BodySection--light">
+        <div class="QuoteAndImage QuoteAndImage--withImage container SpacedComponent">
+          <div class="row">
+            <div class="QuoteAndImage-container">
+              <div class="QuoteAndImage-image QuoteAndImage-image--right col-sm-10 offset-sm-1 col-md-6 offset-md-start col-lg-5 offset-lg-1 col-xl-4">
+                <style>
+                @media only screen and (min-width: 0px) {
+        .Image-ratioContainer.Image-LFQ3ELbMMI1::after {
+          padding-bottom: calc(100% / 0.75);
+        }
+      }
+      @media only screen and (min-width: 701px) {
+        .Image-ratioContainer.Image-LFQ3ELbMMI1::after {
+          padding-bottom: calc(100% / 0.75);
+        }
+      }
+      @media only screen and (min-width: 961px) {
+        .Image-ratioContainer.Image-LFQ3ELbMMI1::after {
+          padding-bottom: calc(100% / 0.75);
+        }
+      }
+      @media only screen and (min-width: 1701px) {
+        .Image-ratioContainer.Image-LFQ3ELbMMI1::after {
+          padding-bottom: calc(100% / 0.75);
+        }
+      }
+      @media only screen and (min-width: px) {
+        .Image-ratioContainer.Image-LFQ3ELbMMI1::after {
+          padding-bottom: calc(100% / 0.75);
+        }
+      }
+      </style>
+      <div class="Image Image-ratioContainer Image-LFQ3ELbMMI1">
+        <picture class="Image-picture Image--lazyload">
+          <source media="(max-width: 700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg 2x">
+          <source media="(max-width: 960px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg 2x">
+          <source media="(max-width: 1700px)" data-srcset="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg 2x" srcset="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg, https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg 2x">
+          <source data-srcset=",  2x" srcset=",  2x">
+          <img class="Image-img lazyloaded" alt="Portrait photo of Four Seasons Hotel Founder and Chairman Isador Sharp wearing suit, tie" data-src="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg" aria-hidden="false" src="https://www.fourseasons.com/alt/img-opt/~80.370.73,1238-0,0000-1278,0000-1704,0000/publish/content/dam/fourseasons/images/web/POR/POR_035_aspectx45.jpg">
+        </picture>
+      </div>
+    </div>
+    <div class="QuoteAndImage-quote col-sm-12 col-md-6 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2">
+      <blockquote class="Quote">
+        <blockquote class="Quote-text">The reason for our success is no secret. It's the Golden Rule – the simple idea that we should treat others the way we would want to be treated</blockquote>
+        <cite class="Attribution Quote-attribution"><strong class="Attribution-author ty-c1">Isadore Sharp</strong>
+          <span class="Attribution-role ty-c2">Founder and Chairman</span></cite>
+      </blockquote>
+      <div class="QuoteAndImage-cta">
+        <a class="CTA CTA--secondary--light QuoteAndImage-cta--small CTA--small" href="/about_four_seasons/four_seasons_history/">Discover Our Story</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</body>
+</html>

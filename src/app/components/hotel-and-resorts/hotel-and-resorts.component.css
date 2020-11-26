@@ -1,0 +1,183 @@
+
+*{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.title{
+  box-align: center;
+  box-flex: center;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.title span{
+  font-family: Monotype Garamond,Garamond,serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125rem;
+  letter-spacing: .02778em;
+  line-height: 1.5em;
+}
+.search{
+  margin: 0 auto 4px;
+  position: static;
+  z-index: 1;
+  width: 960px;
+  box-align: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.fa-search{
+  font-size: 30px;
+  margin-right: 20px;
+}
+.RentalsHero-Search-labelText{
+  font-size: 1.125rem;
+  letter-spacing: .02286em;
+  line-height: 1.17857em;
+  box-flex: 1;
+  flex-grow: 1;
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  box-sizing: border-box;
+}
+.xdsoft_autocomplete{
+  display: inline-block;
+  position: relative;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  width: 700px!important;
+}
+.xdsoft_autocomplete .xdsoft_input{
+  position: relative;
+  z-index: 2;
+  width: 700px;
+  padding: 10px 20px;
+  font-weight: 100;
+  outline-offset: -2px;
+}
+.optly-search-cta{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.RentalsHero-Search-searchText{
+  display: block;
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: .75rem;
+  letter-spacing: .25em;
+  line-height: 1.33333em;
+  margin-right: 20px;
+}
+.ComponentContainer-link:first-child{
+  padding-top:20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.CTA--underlined--light{
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-style: normal;
+  font-size: .75rem;
+  letter-spacing: .25em;
+  line-height: 1.33333em;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  font-weight: 700;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  border-bottom-color: #000;
+  transition: all 1s ease-out;
+  color: #000;
+}
+
+dl{
+  margin: 0;
+}
+.Accordion-item{
+  border-top: 1px solid #000;
+  padding: 32px 0 25px;
+  position: relative;
+}
+.ty-h4{
+  font-family: Monotype Garamond,Garamond,serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125rem;
+  letter-spacing: .02778em;
+  line-height: 1.5em;
+  display: flex;
+  box-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 7px;
+}
+.Accordion-item-region{
+  padding: 30px 0 5px;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+
+}
+.LinksList-links{
+  margin-top: 30px;
+  margin-bottom: 5px;
+  column-gap: 30px;
+  box-sizing: border-box;
+  display: inline;
+
+}
+.LinksList-link{
+  border-bottom: 0;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  text-decoration: underline;
+  vertical-align: top;
+}
+.CTA--underlined--light{
+  font-family: Neue Helvetica,Helvetica,sans-serif;
+  font-style: normal;
+  font-size: .75rem;
+  letter-spacing: .25em;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 700;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  color: #000;
+  transition: all .3s ease-out;
+}
+.item{
+  border-bottom: 1px solid;
+  border-bottom-color: #000;
+  padding: 10px 2px;
+}
+.LinksList-linkContainer{
+  display: inline-flex;
+  margin: 20px;
+  padding: 10px;
+}
+.chart{
+background-color: #000;
+width: 100%;
+padding: 20px;
+margin: 30px 0 0;
+}
+.chart agm-map{
+  height: 500px;
+  margin: auto;
+}
